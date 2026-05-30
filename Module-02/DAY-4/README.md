@@ -22,20 +22,46 @@ To create a java program that returns the sum of all the values in a 2D array.
  ```
 /*
 Program to implement a Multi Dimensional Array using Java
-Developed by: 
-RegisterNumber:  
+Developed by: kolluru pujitha
+RegisterNumber:  212223240074
 */
 ```
 
 ## Sourcecode.java:
 
-
+```
+public class Main
+{
+    public static void sum(int[][] arr)
+    {
+        int sum = 0;
+        for(int i = 0; i < arr.length; i++)
+        {
+            for(int j = 0; j < arr[0].length; j++)
+            {
+                sum = sum + arr[i][j];
+            }
+        }
+        System.out.print("Sum of all elements is: " + sum);
+    }
+    public static void main(String[] args)
+    {
+        int[][] arr = {
+                {1, 2, 3, 4, 5},
+                {2, 4, 6, 8, 10},
+                {1, 3, 5, 7, 9}
+        };
+        sum(arr);
+    }
+}
+```
 
 
 
 
 
 ## OUTPUT:
+<img width="837" height="187" alt="image" src="https://github.com/user-attachments/assets/1e4b1495-7848-4249-843d-702a905dc387" />
 
 
 
