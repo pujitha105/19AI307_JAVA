@@ -4,34 +4,80 @@ To write a parameterized constructor in the Employee class that initializes name
 
 ## ALGORITHM :
 
-	1.	Start the program.
-2.	Define a class Employee:
-    a.	  Declare two private string variables: name and designation.
-3.	Create a parameterized constructor in Employee:
-4.	Accept two parameters: name and designation.
-5.	Assign the parameters to the class fields.
-6.	Define two getter methods in the Employee class:
-     a.	getName() – returns the value of name.
-     b.	getDesg() – returns the value of designation.
-7.	Create another class Sample with the main method.
-8.	Inside the main method:
-     a.	Create an object of Employee using the constructor and pass "John" and "Asst.Manager" as arguments.
-     b.	Call getName() and store the result in a variable empName.
-     c.	Call getDesg() and store the result in a variable empDesg.
-9.	Print the values of empName and empDesg.
-10.	End the program
+1.Start
 
+2.Define class Laptop:
+
+Declare a String variable brand.
+
+Declare a double variable price.
+
+Create a constructor Laptop():
+
+Set brand to "Apple".
+
+Set price to 42500.75.
+
+3.Define a method getBrand():
+
+Return the value of brand.
+
+Define a method getPrice():
+
+Return the value of price.
+
+4.Define class Sample:
+
+In the main method:
+
+ Create an object myLaptop of class Laptop.
+ 
+ Call getBrand() method using myLaptop and store the result in laptopBrand.
+ 
+ Print laptopBrand.
+ 
+ Call getPrice() method using myLaptop and store the result in laptopPrice.
+ 
+ Print laptopPrice.
+5.End
 
 ## PROGRAM:
  ```
 /*
 Program to implement a Parameterized Constructor Using Java
-Developed by: 
-RegisterNumber:  
+Developed by: kolluru pujitha
+RegisterNumber:  212223240074
 */
 ```
 
 ## Sourcecode.java:
+```
+class Laptop {
+    String brand;
+    double price;
+    public Laptop() {
+        this.brand = "Apple";
+        this.price = 42500.75;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+}
+public class Sample {
+    public static void main(String[] args) {
+        Laptop myLaptop = new Laptop();
+        String laptopBrand = myLaptop.getBrand();
+        System.out.println(laptopBrand);
+        double laptopPrice = myLaptop.getPrice();
+        System.out.println(laptopPrice);
+    }
+}
+```
 
 
 
@@ -40,6 +86,7 @@ RegisterNumber:
 
 
 ## OUTPUT:
+<img width="368" height="173" alt="image" src="https://github.com/user-attachments/assets/7eb09563-30a6-446b-9597-4eb5b10134a2" />
 
 
 
